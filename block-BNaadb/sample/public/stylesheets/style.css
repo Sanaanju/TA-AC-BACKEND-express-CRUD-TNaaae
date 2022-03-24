@@ -1,0 +1,212 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+html{
+    font-size: 16px;
+}
+body{
+    line-height: 1.5;
+    background-color: lightpink;
+}
+
+
+
+.container{
+    display: flex;
+    max-width: 1250px;
+    width: 100%;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+
+.flex{
+    display: flex;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color: black;
+}
+h1{
+    display: flex;
+    color: white;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 4rem;
+}
+.goto{
+    display: flex;
+    justify-content: center;
+
+}
+
+.goto a{
+    display: inline-block;
+    margin: 1rem 0;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: .7rem 1rem;
+}
+
+.userForm{
+    justify-content: center;
+    width: 50%;
+   
+}
+form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 4rem 0;
+    background-color: lightseagreen;
+    padding: 1rem;
+    box-shadow: .1rem .1rem .5rem .5rem rgba(0,0,0,.8);
+}
+input,textarea{
+  
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 1rem;
+}
+
+.addbtn{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.addbtn input{
+    display: flex;
+    width: 100%;
+   justify-content: center;
+   text-align: center;
+   font-size: 1.2rem;
+}
+::placeholder{
+    
+    color: gray;
+}
+input:focus{
+
+    border-color: red;
+}
+
+
+ul{
+    list-style: square;
+}
+
+li{
+    
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: olivedrab;
+    margin: 1rem 0;
+}
+button{
+    margin: .5rem 0;
+    background-color: blueviolet;
+  
+    border: none;
+    border: .1rem solid black;
+    padding: .5rem .8rem;
+    border-radius: 1rem;
+}
+button a{
+    color: white;
+}
+
+.delete {
+    background-color: red;
+}
+
+.header-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+}
+.header-box a{
+    color: white;
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.center{
+    justify-content: center;
+}
+
+.margin{
+    margin: 0 .5rem;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>User Form</title>
+</head>
+<body>
+    <header>
+      <div class="flex header-box container">
+        <div>  <a href="/">Home</a></div>
+        <h1>
+            User Form
+        </h1>
+      </div>
+    </header>
+    <main>
+        <div class="container flex userForm">
+
+      
+        <form action="/users/<%=user.id %>" method="POST">
+            <input type="text" placeholder="Enter your name" name="name" value="<%=user.name%>">
+            <input type="email" placeholder="Enter your email" name="email" value="<%=user.email%>">
+            <input type="number" placeholder="Enter your age" name="age" value="<%=user.age%>">
+            <input type="text" placeholder="Enter your profession" name="profession" value="<%=user.profession%>">
+            <textarea name="address" id="" cols="30" rows="10" placeholder="Enter your address">
+               <%=user.address%>
+            </textarea>
+           
+                <input type="submit" value="Edit User">
+         
+        </form>
+    </div>
+    </main>
+    
+</body>
+</html>
