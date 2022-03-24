@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Single User</title>
+</head>
+<body>
+    <header>
+       <div class="flex header-box container">
+        <div>  <a href="/">Home</a></div>
+        <h1>
+            Single User
+        </h1>
+       </div>
+    </header>
+    <main class="container">
+        <ul>
+            <li>
+                <%=user.name%>
+            </li>
+            <li>
+                <%=user.email%>
+            </li>
+            <li>
+                <%=user.profession%>
+            </li>
+            <li>
+                <%=user.age%>
+            </li>
+            <li>
+                <%=user.address%>
+            </li>
+            <button>
+                <a href="/users/<%=user.id%>/edit">Edit the form</a>
+            </button>
+            <button class="delete">
+                <a href="/users/<%=user.id%>/delete">Delete</a>
+            </button>
+        </ul>
+    </main>
+</body>
+</html>
